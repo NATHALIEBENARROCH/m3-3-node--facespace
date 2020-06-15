@@ -1,1 +1,15 @@
-<!-- ... -->
+
+<%- include( '../partials/header') %>
+<div class="homepage">
+<h2>All Facespace members</h2>
+<ul class="homepage__all">
+    <% users.forEach(user => { %>
+      <a href = "/home/users/<%= user._id%>">
+    <li class = "<%= `homepage__all--user ${currentUser.friends && currentUser.friends.includes(user) ? "homepagefriend" : "not"}` %> " >
+      <img class ="homepage__all--user img" src="<%= user.avatarUrl %>" />
+      <img class = "heart" src="/images/heart.png" />
+    </li></a>
+    <% }) %>
+  </ul>
+</div>
+  <%- include( '../partials/footer') %>

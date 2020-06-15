@@ -13,3 +13,14 @@
 .homepage__all--user img {
   width: 120px;
 }
+
+.heart {
+  display: none;
+}
+
+.homepagefriend .heart {
+  display: inline-block;
+  position: relative;
+
+  left: -130px;
+}

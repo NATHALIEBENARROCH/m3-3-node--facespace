@@ -4,7 +4,12 @@
   padding: 0 var(--page-horizontal-padding);
   display: flex;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
-.header h1 {
+.header h1,
+.header h2,
+.header a {
   color: #fff;
+  text-decoration: none;
 }

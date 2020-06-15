@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+<div class="profile-page">
+<div class="profile-page--banner">
+</div>
+<div class="profile-page__user ">
+  <img class= "profile-page__user--avatar" src="<%= user.avatarUrl %>" alt="">
+  <h2><%= user.name %></h2>
+  </div>
+        
+       <div class = "profile-page__friends ">
+        <h3><%= user.name %>'s Friends</h3>
+            <ul class = "profile-page__friends--list">
+                <% user.friends.forEach(friend => { %>
+                <li class="friend">
+                  <img class = "friend img" src="<%= friend.avatarUrl %>" />
+                  <p class = "friend p"><%= friend.name %> / <%= friend._id %></p>
+                </li>
+                <% }) %>
+              </ul>
+            </div>
+  
+  </div>
+    <%- include('../partials/footer') %>
+
+

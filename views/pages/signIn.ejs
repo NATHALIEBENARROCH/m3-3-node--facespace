@@ -1,0 +1,10 @@
+<%- include('../partials/header') %>
+<div class= "signin-page">
+  <form class= "signin-page__form" method="get" action="/getname">
+    <label class = "signin-page__form--label" for="firstName">First name</label>
+    <input class = "signin-page__form--input" type="text" name="firstName" placeholder="Your first name" />
+    <!-- //this above is the input we request in our query -->
+    <button class = "signin-page__form--button" type="submit">Submit</button>
+  </form>
+</div>
+<%- include('../partials/footer') %>
